@@ -1,0 +1,52 @@
+#container
+{
+    background-color: black;
+}
+
+#row1
+{
+    background-color: black;
+}
+
+#row1 h1
+{
+    color: white;
+}
+
+#row2
+{
+    background-color: orange;
+}
+
+#row2 h1
+{
+    color: white;
+}
+
+#choices
+{
+    background-color: lightgreen;
+}
+
+#choices .row
+{
+    background-color: lightgreen;
+}
+
+#choices input
+{
+    border-radius: .25em;
+    height: 50px;
+    width: 50px;
+}
+
+#choices h1
+{
+    display: inline;
+}
+
+#nextprevBtns
+{
+    background-color: orange;
+}
+
