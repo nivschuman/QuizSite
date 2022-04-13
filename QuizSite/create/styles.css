@@ -1,0 +1,36 @@
+body
+{
+    background-color: white;
+}
+
+
+#row1
+{
+    background-color: black;
+}
+
+#row1 h1
+{
+    color: white
+}
+
+#row2
+{
+    background-color: orange;
+}
+
+#QuestionBox
+{
+    background-color: lightgreen;
+}
+
+#PinRow
+{
+    background-color: black;
+}
+
+#PinRow h1
+{
+    color: white;
+}
+  

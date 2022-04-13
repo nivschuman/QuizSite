@@ -1,0 +1,33 @@
+#shortext{
+    text-align: center;
+    border: 3px solid rgb(12, 67, 129);
+    background-color: rgb(202, 200, 87);
+}
+
+
+.form-control{
+    width: 350px;
+    margin: auto;
+    float: center;
+}
+
+body{
+    background-color: rgb(53, 53, 53);
+}
+
+#pin{
+    border: 3px solid rgb(12, 67, 129);
+    background-color: rgb(202, 200, 87);
+    text-align: center;
+}
+
+#pinBox
+{
+    border: 3px solid rgb(12, 67, 129);
+    background-color: rgb(202, 200, 87);
+    text-align: center;
+}
+
+#button{
+    background-color: purple;
+}

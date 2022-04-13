@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Leaderboard</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="Leaderboard.css">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row" id="firstrow">
+                <h1 id="title">Leaderboard</h1>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Username</th>
+                        <th scope="col">Best Grade</th>
+                        <th scope="col">Amount Played</th>
+                      </tr>
+                    </thead>
+                    <tbody id="table_body">
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>90%</td>
+                          <td>60</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>50%</td>
+                          <td>25</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Larry</td>
+                          <td>50%</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Jacob</td>
+                            <td>50%</td>
+                            <td>25</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>Larry</td>
+                            <td>50%</td>
+                            <td>20</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>Jacob</td>
+                            <td>50%</td>
+                            <td>25</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">7</th>
+                            <td>Larry</td>
+                            <td>50%</td>
+                            <td>20</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">8</th>
+                            <td>Jacob</td>
+                            <td>50%</td>
+                            <td>25</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">9</th>
+                            <td>Larry</td>
+                            <td>50%</td>
+                            <td>20</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">10</th>
+                            <td>Jacob</td>
+                            <td>50%</td>
+                            <td>25</td>
+                          </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Enter pin" aria-label="pin" aria-describedby="basic-addon2" id="pin">
+                  <div class="input-group-append">
+                    <button class="btn btn-success" type="button" onclick="findLeaderboard()">Search</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <script src="code.js"></script>
+    </body>
+
+</html>

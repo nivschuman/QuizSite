@@ -1,0 +1,28 @@
+#title{
+    text-align: center;
+    color: white;
+}
+
+#button2{
+    float: right;
+}
+
+
+
+body{
+    background-color: rgb(53, 53, 53);
+}
+
+
+#separate{
+    color: yellow;
+}
+
+
+#user{
+    color: white;
+}
+
+#pass{
+    color: white;
+}
