@@ -14,6 +14,8 @@ class LeaderBoard
 
         this.statuses[this.statuses.length] = status;
 
+        Status.sort(this.statuses);
+
         if(update)
         {
             this.updateHtml();
@@ -59,6 +61,14 @@ class LeaderBoard
 
         return -1;
     }
+
+    clear()
+    {
+        this.statuses = [];
+        
+        let table = document.getElementById("table_body");
+        table.innerHTML = "";
+    }
 }
 
 class Status
@@ -78,6 +88,40 @@ class Status
         }
 
         return this.username == status.username && this.grade == status.grade && this.amount_played == status.amount_played;
+    }
+
+    //compares two statuses based on their grade. 0 - equal, -1 smaller than 1 bigger than
+    compare(status)
+    {
+        if(this.grade == status.grade)
+        {
+            return 0;
+        }
+        else if(this.grade < status.grade)
+        {
+            return -1;
+        }
+        else
+        {
+            return 1;
+        }
+    }
+
+    static sort(statuses)
+    {
+        for(let i=0; i<statuses.length-1; i++)
+        {
+            for(let j=0; j<statuses.length-1; j++)
+            {
+                if(statuses[j].compare(statuses[j+1]) == -1)
+                {
+                    let tmp = statuses[j];
+
+                    statuses[j] = statuses[j+1];
+                    statuses[j+1] = tmp;
+                }
+            }
+        }
     }
 }
 
@@ -160,6 +204,8 @@ leaderboard.updateHtml();
 
 function findLeaderboard()
 {
+    leaderboard.clear();
+
     let pin = document.getElementById("pin").value;
     let response = server.getS("leaderboard/getStatuses", {"pin": pin});
 
