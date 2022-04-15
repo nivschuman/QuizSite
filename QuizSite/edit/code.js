@@ -158,6 +158,12 @@ for(let k=0; k<quizzes.length; k++)
     delBtn.onclick = deleteQuiz;
     delBtn.quiz = quiz;
 
+    if(quizzes[k]["published"])
+    {
+        btn.disabled = true;
+        delBtn.disabled = true;
+    }
+
     table.addRow(btn);
     table.addRow(delBtn);
 }
